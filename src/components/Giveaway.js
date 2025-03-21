@@ -8,17 +8,17 @@ const Giveaway = () => {
       <header className="video-header">
         <div className="video-container">
           <video
-            src="/eland.MP4" // Ensure this matches the exact file name in public/
-            controls // Native controls for play, pause, etc.
-            autoPlay // Auto-plays the video (muted required for most browsers)
-            muted // Required for autoPlay in modern browsers
-            loop // Loops the video
+            src={`${process.env.PUBLIC_URL}/eland.mp4`}
+            controls
+            autoPlay
+            muted
+            loop
             className="video-player"
-            poster="https://via.placeholder.com/600x300" // Fallback image while loading
+            poster="https://via.placeholder.com/600x300"
             width="600"
             height="300"
           >
-            Your browser does not support the video tag. Please ensure the video file exists at /eland.MP4 and is in a supported format (e.g., MP4 with H.264).
+            Your browser does not support the video tag.
           </video>
         </div>
       </header>
@@ -38,36 +38,19 @@ const Giveaway = () => {
         <div className="info-cards">
           <div className="info-card">
             <h2>Elon Musk</h2>
-            <p>
-              The founder of this event <br />
-              and one of the main <br />
-              sponsors of the event
-            </p>
+            <p>The founder of this event <br /> and one of the main <br /> sponsors of the event</p>
           </div>
           <div className="info-card">
             <h2>$100,000,000</h2>
-            <p>
-              Raised to host this huge <br />
-              giveaway with the support <br />
-              of the Tesla
-            </p>
+            <p>Raised to host this huge <br /> giveaway with the support <br /> of the Tesla</p>
           </div>
           <div className="info-card">
             <h2>60 BTC / 300 ETH / 50,000 DOGE</h2>
-            <p>
-              Max amount that we can <br />
-              get on your crypto wallet <br />
-              after participating in this <br />
-              event
-            </p>
+            <p>Max amount that we can <br /> get on your crypto wallet <br /> after participating in this <br /> event</p>
           </div>
           <div className="info-card">
             <h2>Terms of participation</h2>
-            <p>
-              Important: you can only <br />
-              participate in this Giveaway <br />
-              1 time!
-            </p>
+            <p>Important: you can only <br /> participate in this Giveaway <br /> 1 time!</p>
           </div>
         </div>
       </main>
