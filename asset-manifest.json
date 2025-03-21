@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/donatemus/static/css/main.e52315d2.css",
-    "main.js": "/donatemus/static/js/main.b2084b44.js",
+    "main.js": "/donatemus/static/js/main.ef240b72.js",
     "static/js/453.9e9b7447.chunk.js": "/donatemus/static/js/453.9e9b7447.chunk.js",
     "index.html": "/donatemus/index.html",
     "main.e52315d2.css.map": "/donatemus/static/css/main.e52315d2.css.map",
-    "main.b2084b44.js.map": "/donatemus/static/js/main.b2084b44.js.map",
+    "main.ef240b72.js.map": "/donatemus/static/js/main.ef240b72.js.map",
     "453.9e9b7447.chunk.js.map": "/donatemus/static/js/453.9e9b7447.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e52315d2.css",
-    "static/js/main.b2084b44.js"
+    "static/js/main.ef240b72.js"
   ]
 }
