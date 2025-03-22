@@ -15,7 +15,7 @@ const Giveaway = () => {
             loop
             className="video-player"
             poster="https://via.placeholder.com/600x300"
-            width="600"
+            width="300"
             height="300"
           >
             Your browser does not support the video tag.

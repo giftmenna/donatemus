@@ -189,7 +189,7 @@ const ETHGiveaway = () => {
           <Link to="/ethparticipate">
             <button
               style={{
-                backgroundColor: "#000",
+                backgroundColor: "#28a745",
                 color: "#fff",
                 padding: "12px",
                 border: "none",

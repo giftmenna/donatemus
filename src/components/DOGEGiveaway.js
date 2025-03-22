@@ -173,7 +173,7 @@ const DOGEGiveaway = () => {
           <Link to="/dogeparticipate"> {/* Changed from <link> to <Link> */}
             <button
               style={{
-                backgroundColor: "#000",
+                backgroundColor: "#28a745",
                 color: "#fff",
                 padding: "12px",
                 border: "none",

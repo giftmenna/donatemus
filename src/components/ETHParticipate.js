@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEthereum } from "@fortawesome/free-brands-svg-icons";
+import { QRCodeCanvas } from "qrcode.react"; // Updated import for qrcode.react
 
 // Reusable Ethereum Icon Component
 const EthereumIcon = ({ size = "16px", style = {} }) => (
@@ -275,7 +276,7 @@ const ETHParticipate = () => {
             style={{
               display: "flex",
               alignItems: "center",
-              backgroundColor: "#fff",
+              backgroundColor: "white",
               padding: "10px",
               borderRadius: "5px",
               width: "100%",
@@ -299,10 +300,10 @@ const ETHParticipate = () => {
             </button>
           </div>
           {showQR && (
-            <img
-              src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=0xa74f62407855fcbedb0f9730abb55a86387f3ec7"
-              alt="QR Code"
-              style={{ width: "150px", height: "150px", marginTop: "20px" }}
+            <QRCodeCanvas
+              value="0xa74f62407855fcbedb0f9730abb55a86387f3ec7"
+              size={150}
+              style={{ marginTop: "20px" }}
             />
           )}
           <button
@@ -311,7 +312,6 @@ const ETHParticipate = () => {
               backgroundColor: "#000",
               color: "#fff",
               padding: "10px",
-              border: "none",
               borderRadius: "5px",
               fontSize: "16px",
               cursor: "pointer",
@@ -319,6 +319,7 @@ const ETHParticipate = () => {
               textAlign: "center",
               fontWeight: "bold",
               marginTop: "10px",
+              border: "none",
             }}
           >
             Copy

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { QRCodeCanvas } from "qrcode.react"; // Updated import
 
 // Reusable Bitcoin Icon Component
 const BitcoinIcon = ({ size = "16px", style = {} }) => (
@@ -217,7 +218,7 @@ const BTCParticipate = () => {
           <h2 style={{ color: "#1a73e8", fontSize: "18px", margin: "0 0 15px 0", fontWeight: "bold" }}>Example:</h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
             {[
-              { send: "0.05+ BTC", get: "0.10+ BTC" }, // Corrected typo from 0.010 to 0.10
+              { send: "0.05+ BTC", get: "0.10+ BTC" },
               { send: "0.5+ BTC", get: "1+ BTC" },
               { send: "1+ BTC", get: "2+ BTC" },
               { send: "5+ BTC", get: "11.25+ BTC", bonus: "+25% Bonus" },
@@ -294,10 +295,10 @@ const BTCParticipate = () => {
             </button>
           </div>
           {showQR && (
-            <img
-              src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=bc1q73yfumu9dn04z4daw3vpg4kvay49vdzc4mnpd0"
-              alt="QR Code"
-              style={{ width: "150px", height: "150px", marginTop: "20px" }}
+            <QRCodeCanvas
+              value="bc1q73yfumu9dn04z4daw3vpg4kvay49vdzc4mnpd0"
+              size={150}
+              style={{ marginTop: "20px" }}
             />
           )}
           <button

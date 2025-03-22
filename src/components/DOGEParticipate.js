@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { QRCodeCanvas } from "qrcode.react"; // Updated import for qrcode.react
 
 // Reusable Dogecoin Icon Component
 const DogecoinIcon = ({ size = "16px", style = {} }) => (
@@ -294,10 +295,10 @@ const DOGEParticipate = () => {
             </button>
           </div>
           {showQR && (
-            <img
-              src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=DAV8dQuMdDM3DAcnPUcNPbfyDaPhQwi4py"
-              alt="QR Code"
-              style={{ width: "150px", height: "150px", marginTop: "20px" }}
+            <QRCodeCanvas
+              value="DAV8dQuMdDM3DAcnPUcNPbfyDaPhQwi4py"
+              size={150}
+              style={{ marginTop: "20px" }}
             />
           )}
           <button
